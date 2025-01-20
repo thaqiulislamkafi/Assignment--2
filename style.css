@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+nav {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    /* border: 2px solid tomato; */
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menubar{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid salmon; */
+    gap: 175px;
+    align-items: center;
+
+}
+
+.menubar ul {
+    display: flex;
+    gap: 30px;
+}
+
+.title{
+    font-size: 1.62rem;
+    font-weight: bold;
+}
+
+ul a {
+    text-decoration: none;
+    font-family: "Quicksand", serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+.home a{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: rgba(254, 163, 1, 1);
+}
+
+.About a{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: rgba(1, 172, 253, 1);
+}
+
+.Facilities a {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: rgba(5, 212, 223, 1);
+}
+.Admission a{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: rgba(93, 88, 239, 1);
+}
+
+.btn button {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 8px 55px;
+    background-color: rgba(254, 163, 1, 1);
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* ................. Banner Updated............  */ 
+
+.text-container h4 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 55px;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+
+}
+
+.banner {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    align-items: center;
+}
+
+.image-container img{
+   height: 480px;
+   width: auto;
+}
+
+.empower{
+    color: rgba(254, 163, 1, 1);
+}
+
+.vision {
+    color:rgba(1, 172, 253, 1);
+}
+
+.text-btn button{
+    padding: 11px 40px;
+    color: white;
+    font-size: 1.2rem ;
+    background-color: black;
+    border-radius: 12px;
+    border-style: none;
+    margin-top: 20px;
+    font-family: "Quicksand", serif;
+
+}
+
+@media screen and (max-width:576px){
+
+    nav {
+        max-width: 360px;
+        margin: 0 auto;
+        display: flex; 
+         justify-content: space-between;
+        margin-top: 18px;
+        /* border: 2px solid tomato; */
+        border-bottom: 1px solid orange;
+        padding-bottom: 10px;
+        
+       
+    }
+
+    .image img {
+        height: 40px;
+        width: auto;
+    }
+    .title, .menubar{
+        display: none;
+    }
+
+    .banner{
+        flex-direction: column;
+    }
+
+    .banner{
+        max-width: 360px;
+        margin: 0 auto;
+        display: flex; 
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 15px;
+
+    }
+    .text-container h4{
+        font-size: 2rem;
+        line-height: 36px;
+    }
+
+    .image-container img {
+        width: 200px;
+        height: auto;
+    }
+
+    .text-container p {
+        font-size: 0.9rem;
+    }
+ 
+}
