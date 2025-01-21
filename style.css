@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    border-style: none;
 }
 
 .quicksand-font {
@@ -252,14 +253,17 @@ ul li {
 #read-kinder{
     color: rgba(100, 200, 255, 1);
     margin-top: 30px;
+    font-weight: bold;
 }
 #read-elementary{
     color: rgba(240, 170, 0, 1);
     margin-top: 30px;
+    font-weight: bold;
 }
 #read-middle{
     color: rgba(135, 0, 255, 1);
     margin-top: 30px;
+    font-weight: bold;
 }
 
 .curriculum-icon{
@@ -280,9 +284,239 @@ ul li {
 
 @media screen and (max-width:576px) {
 
+
+    .standard-curriculum-container{
+        max-width: 360px;
+        margin: 0 auto;
+        padding: 0;
+    
+    }
+    .standard-curriculum h3 {
+        font-size: 1.7rem;
+        margin-top: 38px;
+        margin-bottom: 18px;
+    }
     .card-container{
         flex-direction: column;
         margin: 0 18px;
     }
+
+    .curriculum-icon{
+        display: none;
+    }
+    
+}
+
+
+/* ................. Our stories Section Updated............  */
+
+
+.our-stories{
+    background: url("assets/bg.png"),linear-gradient(#FFFFFF,rgba(254, 161, 1, 0.473));
+    margin-top: 50px;
+    padding-top: 50px;
+    align-items: center;
+   
+}
+
+.our-stories h4{
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+.our-stories-container{
+    max-width: 1110px;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 75px;
+    display: flex;
+    gap: 15px;
+    /* border: 2px solid orange; */
+}
+
+.left-card {
+    border-radius: 18px;
+    background-color: white;
+    /* position: relative; */
+}
+.left-card img {
+    height: 312px;
+    width: auto;
+    border-radius: 18px 18px 0 0 ;
+}
+
+#blue-btn {
+    margin-top: -26px;
+    margin-left: 34px;
+}
+
+#blue-btn button{
+    font-family: "Quicksand", serif;
+    color: white;
+    background-color: rgba(60, 216, 232, 1);
+    padding: 13px 16px;
+    border-radius: 45px;
+}
+
+
+
+.left-card h5{
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 34px;
+    margin: 46px 35px;
+}
+
+.left-card p{
+    color: rgba(102, 102, 102, 1);
+    font-size: 0.9rem;
+    line-height: 25px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    margin-right: 60px;
+
+}
+
+.right-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    
+}
+
+.card{
+    background-color: white;
+    border-radius: 18px;
+}
+
+.green-btn {
+    margin-top: -26px;
+    margin-left: 34px;
+}
+
+.green-btn button{
+    font-family: "Quicksand", serif;
+    color: white;
+    background-color: rgba(149, 178, 38, 1);
+    padding: 13px 16px;
+    border-radius: 45px;
+}
+
+.purple-btn {
+    margin-top: -26px;
+    margin-left: 34px;
+}
+
+.purple-btn button{
+    font-family: "Quicksand", serif;
+    color: white;
+    background-color: rgba(93, 88, 240, 1);
+    padding: 13px 16px;
+    border-radius: 45px;
+}
+
+.right-cards img {
+
+    border-radius: 18px 18px 0 0 ;
+}
+
+.right-cards p {
+    font-size:0.9rem ;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 22px 50px 22px 35px;
+}
+
+.stories-btn {
+    text-align: center;
+}
+
+.stories-btn button {
+    font-family: "Quicksand", serif;
+    padding: 10px 55px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: black;
+    border-radius: 12px;
+    
+}
+
+@media screen and (max-width:576px) {
+
+     .our-stories{
+        padding: 0;
+     }
+
+     .our-stories h4 {
+        margin-bottom: 0;
+        font-size: 1.8rem;
+        font-weight: bold;
+     }
+    .card {
+        padding: 0;
+        margin: 0;
+    }
+
+    .left-card{
+        display: none;
+    }
+    .right-cards{
+        grid-template-columns: repeat(2,1fr);
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .right-cards img{
+        width: 173px;
+        height: auto;
+    }
+
+    .right-cards p{
+        font-size: 0.5rem;
+        margin: 10px 19px 16px 19px;
+        line-height: 14px;
+    }
+
+    .green-btn {
+        margin-top: -17px;
+        margin-left: 19px;
+    }
+    
+    .green-btn button{
+        font-family: "Quicksand", serif;
+        color: white;
+        background-color: rgba(149, 178, 38, 1);
+        padding: 5px 9px;
+        border-radius: 45px;
+        font-size: 0.5rem;
+    }
+
+    .purple-btn {
+        margin-top: -17px;
+        margin-left: 34px;
+    }
+    
+    .purple-btn button{
+        font-family: "Quicksand", serif;
+        color: white;
+        background-color: rgba(93, 88, 240, 1);
+        padding: 5px 9px;
+        border-radius: 45px;
+        font-size: 0.5rem;
+    }
+    .our-stories-container{
+        margin-bottom: 22px;
+        margin-top: 32px;
+    }
+
+    .stories-btn button {
+        font-size: 1rem;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+  
     
 }
