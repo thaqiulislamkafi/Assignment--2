@@ -75,7 +75,7 @@ ul li {
 }
 
 .home a{
-    font-weight: 500;
+    font-weight: bold;
     font-size: 1.2rem;
     color: rgba(254, 163, 1, 1);
 }
@@ -117,10 +117,10 @@ ul li {
     color: rgba(255, 255, 255, 1);
     font-size: 1.2rem;
     font-weight: 600;
-    padding: 8px 55px;
+    padding: 10px 58px;
     background-color: rgba(254, 163, 1, 1);
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
     cursor: pointer;
 }
 
@@ -368,7 +368,6 @@ ul li {
         max-width: 360px;
         margin: 0 auto;
         padding: 0;
-       
     
     }
     .standard-curriculum h3 {
@@ -381,10 +380,6 @@ ul li {
         flex-direction: column;
         margin: 0 8px;
       
-    }
-
-    .card-container p {
-        max-width: ;
     }
 
     .curriculum-icon{
