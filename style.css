@@ -14,7 +14,7 @@
   font-style: normal;
 }
 
-nav {
+.nav-bar{
     max-width: 1110px;
     margin: 0 auto;
     display: flex;
@@ -24,6 +24,19 @@ nav {
     align-items: center;
 }
 
+.toogle{
+    display: none;
+}
+
+.running-text{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+marquee{
+    color: orange;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
 .logo {
     display: flex;
     gap: 8px;
@@ -142,19 +155,38 @@ ul li {
 }
 
 @media screen and (max-width:576px){
-
-    nav {
+     nav{
+        border-bottom: 2px solid orange;
+     }
+    .nav-bar{
         max-width: 360px;
         margin: 0 auto;
         display: flex; 
          justify-content: space-between;
         margin-top: 18px;
-        /* border: 2px solid tomato; */
-        border-bottom: 1px solid orange;
-        padding-bottom: 10px;
-        
-       
+        /* border: 2px solid tomato; */        
+        padding-bottom: 10px; 
     }
+    .toogle{
+        display:inline;
+        
+    }
+
+    .nav-toogle{
+        display: block;
+        z-index: 999;
+        border: none;
+        background: transparent;
+    }
+    
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px 5px;
+        background-color: rgb(0, 0, 0);
+    }
+
 
     .image img {
         height: 40px;
@@ -230,6 +262,8 @@ ul li {
 .card-container p{
     font-size: 0.8rem;
     line-height: 24px;
+    color: rgba(128, 128, 128, 1);
+    font-weight: 500;
 }
 
 .card-1 , .card-2, .card-3{
@@ -277,9 +311,11 @@ ul li {
 }
 
 .curriculum-icon img {
-      
+    
+    width: 40px;
+    height: auto;
     border-radius: 50%;
-    padding: 12px;
+    padding: 1px;
     background-color: orange;
   
 }
@@ -448,10 +484,12 @@ ul li {
 }
 
 @media screen and (max-width:576px) {
-
+    
      .our-stories{
         padding: 0;
         padding-bottom: 40px;
+        background-size: cover;
+        
      }
 
      .our-stories-container{
