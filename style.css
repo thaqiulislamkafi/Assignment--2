@@ -66,7 +66,9 @@ marquee{
 ul a {
     text-decoration: none;
     font-family: "Quicksand", serif;
+    cursor: pointer;
 }
+
 
 ul li {
     list-style: none;
@@ -77,11 +79,18 @@ ul li {
     font-size: 1.2rem;
     color: rgba(254, 163, 1, 1);
 }
+.home a:hover{
+    color: rgb(199, 128, 6);
+}
 
 .About a{
     font-weight: 500;
     font-size: 1.2rem;
     color: rgba(1, 172, 253, 1);
+}
+.About a:hover{
+    color: rgb(1, 89, 136);
+
 }
 
 .Facilities a {
@@ -89,10 +98,19 @@ ul li {
     font-size: 1.2rem;
     color: rgba(5, 212, 223, 1);
 }
+
+.Facilities a:hover{
+    color:rgb(3, 155, 163); ;
+}
+
 .Admission a{
     font-weight: 500;
     font-size: 1.2rem;
     color: rgba(93, 88, 239, 1);
+}
+
+.Admission a:hover{
+    color: rgb(67, 63, 177);;
 }
 
 .btn button {
@@ -103,6 +121,11 @@ ul li {
     background-color: rgba(254, 163, 1, 1);
     border: none;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn button:hover{
+    background-color: rgb(192, 123, 3);
 }
 
 
@@ -117,6 +140,7 @@ ul li {
 
 .text-container p {
     font-size: 1.2rem;
+    max-width: 610px;
 
 }
 
@@ -151,7 +175,11 @@ ul li {
     border-style: none;
     margin-top: 20px;
     font-family: "Quicksand", serif;
+    cursor: pointer;
 
+}
+.text-btn button:hover{
+    background-color: rgba(0, 0, 0, 0.747);
 }
 
 @media screen and (max-width:576px){
@@ -182,7 +210,7 @@ ul li {
     .bar{
         display: block;
         width: 25px;
-        height: 3px;
+        height: 2px;
         margin: 5px 5px;
         background-color: rgb(0, 0, 0);
     }
@@ -211,7 +239,7 @@ ul li {
     }
     .text-container h4{
         font-size: 2rem;
-        line-height: 36px;
+        line-height: 38px;
     }
 
     .image-container img {
@@ -221,6 +249,13 @@ ul li {
 
     .text-container p {
         font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .text-btn button {
+        font-weight: 500;
+        border-radius: 8px;
+        padding: 8px 25px;
     }
  
 }
@@ -236,7 +271,7 @@ ul li {
     margin: 0 auto;
     align-items: center;
     margin-top: 70px;
-    /* border: 2px solid saddlebrown; */
+    
 }
 
 .standard-curriculum-container h3{
@@ -251,6 +286,7 @@ ul li {
     gap:35px;
     text-align: center;
     margin-bottom: 75px;
+  
 }
 
 .card-container h5 {
@@ -272,7 +308,7 @@ ul li {
 }
 
 .card-1 {
-    background-image: linear-gradient(#DEF5FF,rgba(255, 255, 255, 1));
+    background-image: linear-gradient(#DEF5FF,#FFFFFF);
     border: 2px solid rgba(222, 245, 255, 1);
 }
 
@@ -284,6 +320,11 @@ ul li {
 .card-3 {
     background-image: linear-gradient(#EEE1FF,rgba(255, 255, 255, 1));
     border: 2px solid rgba(242, 232, 255, 1);
+}
+
+.card-2 h5, .card-3 h5{
+    margin-top: 37px;
+
 }
 
 #read-kinder{
@@ -327,6 +368,7 @@ ul li {
         max-width: 360px;
         margin: 0 auto;
         padding: 0;
+       
     
     }
     .standard-curriculum h3 {
@@ -335,8 +377,14 @@ ul li {
         margin-bottom: 18px;
     }
     .card-container{
+        gap: 22px;
         flex-direction: column;
-        margin: 0 18px;
+        margin: 0 8px;
+      
+    }
+
+    .card-container p {
+        max-width: ;
     }
 
     .curriculum-icon{
@@ -415,6 +463,7 @@ ul li {
     margin-left: 35px;
     margin-bottom: 30px;
     margin-right: 60px;
+    font-weight: 500;
 
 }
 
@@ -480,7 +529,12 @@ ul li {
     font-size: 1rem;
     background-color: black;
     border-radius: 12px;
+    cursor: pointer;
     
+}
+
+.stories-btn button:hover{
+    background-color: rgba(0, 0, 0, 0.747);
 }
 
 @media screen and (max-width:576px) {
@@ -528,6 +582,7 @@ ul li {
         margin: 10px 19px 16px 19px;
         line-height: 14px;
         font-weight: bold;
+        max-width: 100px;
     }
 
     .green-btn {
@@ -546,7 +601,7 @@ ul li {
 
     .purple-btn {
         margin-top: -17px;
-        margin-left: 34px;
+        margin-left: 18px;
     }
     
     .purple-btn button{
@@ -564,9 +619,8 @@ ul li {
 
     .stories-btn button {
         font-size: 1rem;
-        padding-left: 35px;
-        padding-right: 35px;
-        border-radius: 22px;
+        padding: 8px 38px;
+        border-radius: 12px;
     }
   
     
