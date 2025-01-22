@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     border-style: none;
+    text-decoration: none;
+    list-style: none;
 }
 
 .quicksand-font {
@@ -315,6 +317,7 @@ ul li {
     background: url("assets/bg.png"),linear-gradient(#FFFFFF,rgba(254, 161, 1, 0.473));
     margin-top: 50px;
     padding-top: 50px;
+    padding-bottom: 40px;
     align-items: center;
    
 }
@@ -448,6 +451,11 @@ ul li {
 
      .our-stories{
         padding: 0;
+        padding-bottom: 40px;
+     }
+
+     .our-stories-container{
+        padding: 0;
      }
 
      .our-stories h4 {
@@ -465,12 +473,15 @@ ul li {
     }
     .right-cards{
         grid-template-columns: repeat(2,1fr);
+        gap: 10px;
         max-width: 360px;
         margin: 0 auto;
+        /* border: 2px solid orange; */
+        
     }
 
     .right-cards img{
-        width: 173px;
+        width: 175px;
         height: auto;
     }
 
@@ -478,6 +489,7 @@ ul li {
         font-size: 0.5rem;
         margin: 10px 19px 16px 19px;
         line-height: 14px;
+        font-weight: bold;
     }
 
     .green-btn {
@@ -516,7 +528,120 @@ ul li {
         font-size: 1rem;
         padding-left: 35px;
         padding-right: 35px;
+        border-radius: 22px;
     }
   
     
+}
+
+
+/* ................. Footer Section Updated............  */
+
+
+footer{
+    background-color: orange;
+}
+.footer-kids{
+    background-color: rgba(1, 172, 253, 1);
+    padding: 120px 200px 120px 110px ;
+}
+
+.footer-container{
+    
+    display: flex;
+    gap: 100px;
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+
+.about-logo{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.kids-logo img{
+    height: 80px;
+    width: auto;
+}
+
+.about-logo-title{
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.about-description{
+    color: white;
+    font-size: 1.1rem;
+    max-width: 330px;
+    padding-left: 10px;
+}
+
+.about-school{
+    margin: 0 70px;
+}
+
+.about-school p {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.about-menubar a{
+    color: white;
+    font-size: 1.1rem;
+    margin: 22px 0;
+    font-weight: normal;
+    display: flex;
+   
+
+}
+
+.icon p {
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+}
+
+.social-icons img {
+    width: 28px;
+    height: auto;
+    margin: 0 3px;
+}
+
+@media screen and (max-width:576px) {
+.footer-container{
+        flex-direction: column;
+        gap: 28px;
+}
+
+.footer-kids{
+    /* margin: 0; */
+    padding: 60px 15px;
+}
+
+.about-logo{
+    margin: 0 0 18px 0;
+    padding: 0;
+}
+
+.about-school{
+    padding: 0;
+    margin: 0 0 0 10px;
+   
+}
+
+.about-menubar a{
+    margin: 16px 0;
+}
+
+.icon {
+    margin: -10px 0 0 7px;
+   
+}
+
 }
